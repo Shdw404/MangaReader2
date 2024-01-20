@@ -1,0 +1,228 @@
+<html>
+<head>
+    <title>Manga Reader - Derniers</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: #333;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .nav li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .nav a {
+            color: #ff0404;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav a:hover {
+            color: #000000;
+        }
+
+        .content {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .manga {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .manga img {
+            width: 100px;
+            height: 150px;
+            margin-right: 20px;
+        }
+
+        .manga-info {
+            flex-grow: 1;
+        }
+
+        .manga-title {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .manga-genre {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .manga-desc {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .manga-link a {
+            color: #333;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .manga-link a:hover {
+            color: #999;
+        }
+
+        .slider {
+            width: 100%;
+            max-width: 800px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .slider img {
+            width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 0.5px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+<style>
+    .slider {
+        width: 600px;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .slider img {
+        width: 600px;
+        height: 300px;
+    }
+
+    .slider .slides {
+        display: flex;
+        width: 3000px;
+        animation: slide 20s infinite;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        20% {
+            transform: translateX(-600px);
+        }
+
+        40% {
+            transform: translateX(-1200px);
+        }
+
+        60% {
+            transform: translateX(-1800px);
+        }
+
+        80% {
+            transform: translateX(-2400px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="file:///C:/Users/Zer0.amv/Desktop/Manga%20Reader.html#"><img
+                    src="https://fontmeme.com/permalink/240116/3c4e51ba47de104086fab7dac06f1680.png"
+                    alt="police-solo-level" border="0"></a>
+            <a href="file:///C:/Users/Zer0.amv/Desktop/Manga%20Reader.html#"><img
+                    src="https://fontmeme.com/permalink/240116/807bab8f667d6d091f520b4485752f0f.png"
+                    alt="police-solo-level" border="0"></a>
+        </div>
+        <ul class="nav">
+            <li><a href="file:///C:/Users/Zer0.amv/Desktop/Manga%20Reader.html#">Accueil</a></li>
+            <li><a href="file:///C:/Users/Zer0.amv/Desktop/Genres.html">Genres</a></li>
+            <li><a href="file:///C:/Users/Zer0.amv/Desktop/Populaires.html">Populaires</a></li>
+            <li><a href="#" style="color: white; background-color: #999;">Derniers</a></li>
+        </ul>
+
+        <div class="slider">
+            <div class="slides">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/Design%20sans%20titre.png" alt="Image 1">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/image2.jpg" alt="Image 2">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/image3.jpg" alt="Image 3">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/Untitled%20Project%20(1).jpg" alt="Image 4">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/Untitled%20Project%20(2).jpg" alt="Image 5">
+            </div> <!-- Ajoutez cette balise de fermeture -->
+        </div>
+        
+        <div class="content">
+            <h2>Les derniers chapitres de vos mangas préférés</h2>
+            <div class="manga">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/black-clover.jpg" alt="Black Clover">
+                <div class="manga-info">
+                    <div class="manga-title">Black Clover - Chapitre 312</div>
+                    <div class="manga-genre">Action, Aventure, Fantastique</div>
+                    <div class="manga-desc">Asta et ses amis affrontent les démons qui menacent le royaume de Clover. Asta utilise son anti-magie pour contrer le pouvoir du démon suprême.</div>
+                    <div class="manga-link"><a href="#">Lire maintenant</a></div>
+                </div>
+            </div>
+            <div class="manga">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/my-hero-academia.jpg" alt="My Hero Academia">
+                <div class="manga-info">
+                    <div class="manga-title">My Hero Academia - Chapitre 336</div>
+                    <div class="manga-genre">Action, Comédie, Super-héros</div>
+                    <div class="manga-desc">Izuku et ses camarades de classe sont des apprentis héros qui doivent protéger la société des vilains. Izuku découvre le secret de l'un de ses professeurs qui est lié à l'ennemi juré des héros, All For One.</div>
+                    <div class="manga-link"><a href="#">Lire maintenant</a></div>
+                </div>
+            </div>
+            <div class="manga">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/one-piece.jpg" alt="One Piece">
+                <div class="manga-info">
+                    <div class="manga-title">One Piece - Chapitre 1035</div>
+                    <div class="manga-genre">Aventure, Comédie, Fantastique</div>
+                    <div class="manga-desc">Luffy et son équipage sont sur l'île de Wano, où ils doivent affronter l'empereur Kaido et ses alliés. Luffy se bat contre Kaido dans un duel décisif, tandis que Zoro et Sanji font face à deux des calamités de Kaido.</div>
+                    <div class="manga-link"><a href="#">Lire maintenant</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Manga Reader © 2024. Tous droits réservés.</p>
+        </div>
+    </div>
+</body>
+</html>

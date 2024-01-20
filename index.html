@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga Reader</title>
+
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: #333;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .nav li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .nav a {
+            color: #ff0404;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav a:hover {
+            color: #000000;
+        }
+
+        .content {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .manga {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .manga img {
+            width: 100px;
+            height: 150px;
+            margin-right: 20px;
+        }
+
+        .manga-info {
+            flex-grow: 1;
+        }
+
+        .manga-title {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .manga-genre {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .manga-desc {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .manga-link a {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    background-color: #ff0404;
+    padding: 4px 13px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.manga-link a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+
+        .slider {
+            width: 100%;
+            max-width: 800px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .slider img {
+            width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 0.5px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+    <style>
+        .slider {
+            width: 600px;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider img {
+            width: 600px;
+            height: 300px;
+        }
+
+        .slider .slides {
+            display: flex;
+            width: 3000px;
+            animation: slide 20s infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+
+            20% {
+                transform: translateX(-600px);
+            }
+
+            40% {
+                transform: translateX(-1200px);
+            }
+
+            60% {
+                transform: translateX(-1800px);
+            }
+
+            80% {
+                transform: translateX(-2400px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="file:///C:/Users/Zer0.amv/Desktop/Manga%20Reader.html#"><img
+                    src="https://fontmeme.com/permalink/240116/3c4e51ba47de104086fab7dac06f1680.png"
+                    alt="police-solo-level" border="0"></a>
+            <a href="file:///C:/Users/Zer0.amv/Desktop/Manga%20Reader.html#"><img
+                    src="https://fontmeme.com/permalink/240116/807bab8f667d6d091f520b4485752f0f.png"
+                    alt="police-solo-level" border="0"></a>
+        </div>
+        <ul class="nav">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="file:///C:/Users/Zer0.amv/Desktop/Genres.html">Genres</a></li>
+            <li><a href="file:///C:/Users/Zer0.amv/Desktop/Populaires.html">Populaires</a></li>
+            <li><a href="file:///C:/Users/Zer0.amv/Desktop/Derniers.html">Derniers</a></li>
+        </ul>
+        <div class="slider">
+            <div class="slides">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/Design%20sans%20titre.png" alt="Image 1">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/image2.jpg" alt="Image 2">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/image3.jpg" alt="Image 3">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/Untitled%20Project%20(1).jpg" alt="Image 4">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/Untitled%20Project%20(2).jpg" alt="Image 5">
+            </div>
+        </div>
+        <div class="content">
+            <div class="manga">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/one-piece.jpg" alt="One Piece">
+                <div class="manga-info">
+                    <div class="manga-title">One Piece</div>
+                    <div class="manga-genre">Aventure, Comédie, Fantastique</div>
+                    <div class="manga-desc">Luffy et son équipage naviguent sur les mers à la recherche du légendaire
+                        trésor appelé One Piece et doivent faire face à de nombreux dangers.</div>
+                    <div class="manga-link"><a href="#">Lire maintenant</a></div>
+                </div>
+            </div>
+            <div class="manga">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/naruto.jpg" alt="Naruto">
+                <div class="manga-info">
+                    <div class="manga-title">Naruto</div>
+                    <div class="manga-genre">Action, Aventure, Comédie</div>
+                    <div class="manga-desc">Naruto est un jeune ninja qui rêve de devenir Hokage, le chef de son
+                        village. Il doit surmonter de nombreux obstacles et se battre contre de puissants ennemis.</div>
+                    <div class="manga-link"><a href="#">Lire maintenant</a></div>
+                </div>
+            </div>
+            <div class="manga">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/attack-on-titan.jpg" alt="Attack on Titan">
+                <div class="manga-info">
+                    <div class="manga-title">Attack on Titan</div>
+                    <div class="manga-genre">Horreur, Action, Drame</div>
+                    <div class="manga-desc">L'humanité vit recluse derrière un mur pour se protéger des Titans, des
+                        créatures géantes qui dévorent les humains. Eren, Mikasa et Armin font partie des soldats qui
+                        combattent les Titans.</div>
+                    <div class="manga-link"><a href="#">Lire maintenant</a></div>
+                </div>
+            </div>
+            <div class="manga">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/my-hero-academia.jpg" alt="My Hero Academia">
+                <div class="manga-info">
+                    <div class="manga-title">My Hero Academia</div>
+                    <div class="manga-genre">Super-héros, Action, Comédie</div>
+                    <div class="manga-desc">Izuku est un garçon qui rêve de devenir un super-héros, mais il n'a pas de
+                        pouvoir spécial. Il rencontre son idole, All Might, qui lui transmet son pouvoir, le One For
+                        All. Il intègre une école de héros et doit faire ses preuves face aux vilains.</div>
+                    <div class="manga-link"><a href="#">Lire maintenant</a></div>
+                </div>
+            </div>
+            <div class="manga">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/tower-of-god.jpg" alt="Tower of God">
+                <div class="manga-info">
+                    <div class="manga-title">Tower of God</div>
+                    <div class="manga-genre">Webtoon, Action, Aventure</div>
+                    <div class="manga-desc">25ème Baam est un jeune homme qui n'a jamais connu la société et la présence
+                        des autres à l'exception de Rachel, la seule fille qui ait jamais compté pour lui. Ce qu'il
+                        désire le plus au monde ? Continuer de vivre avec elle. Mais lorsque Rachel se met en tête
+                        d'atteindre le sommet de la Tour, elle s'embarque dans une aventure avec à sa poursuite, Baam,
+                        qui suit désespérément ses traces...
+                        <div class="manga-link"><a href="#">Lire maintenant</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="manga">
+                <img src="file:///C:/Users/Zer0.amv/Downloads/demonic-emperor.jpg" alt="Demonic Emperor">
+                <div class="manga-info">
+                    <div class="manga-title">Demonic Emperor</div>
+                    <div class="manga-genre">Action, Aventure, Fantastique</div>
+                    <div class="manga-desc">
+                        CZhuo Yifan était un empereur magique ou pourrait être appelé un empereur démon car il
+                        possédait
+                        un ancien livre d’empereur appelé le Livre des Neuf Secrets, il était la cible de tous les
+                        experts et il a même été trahi et tué par ses élèves. Puis son âme entre et revient à la vie
+                        dans un garçon serviteur de la famille nommé Zhuo Fan. Parce qu’une magie démoniaque le
+                        retient,
+                        il doit réunir les souvenirs de l’enfant et ne peut ignorer la famille et la maîtresse qu’il
+                        sert. Comment peut-il ramener cette famille descendante au sommet de ce continent ?</div>
+                    <div class="manga-link"><a href="#">Lire maintenant</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Manga Reader © 2024. Tous droits réservés.</p>
+        </div>
+    </div>
+</body>
+
+</html>
